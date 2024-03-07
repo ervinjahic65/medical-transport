@@ -36,7 +36,7 @@ p {
     padding: 0;
 }
 .navbar-brand img {
-    width: 220px;
+    width: 65px;
 }
 #preloader {
     width: 100%;
@@ -303,7 +303,7 @@ body.clinic_version .first-section h2 {
 }
 .service-time {
     float: left;
-    width: 100%;
+    width: 100%;    
     min-height: 350px;
     margin-top: -350px;
     padding: 50px;
@@ -1068,6 +1068,7 @@ body.clinic_version .footer .widget-title h3 {
 }
 .iconcont a {
     font-family: 'Arvo', serif;
+    font-size: 16px;
 }
 .services-paert {
     float: left;
