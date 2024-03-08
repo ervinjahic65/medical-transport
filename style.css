@@ -29,10 +29,10 @@
     IMPORT FONTS
 -------------------------------------------------------------------*/
 
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700,900);
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i);
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i);
-@import url(https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i);
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 /*------------------------------------------------------------------
@@ -444,6 +444,16 @@ li.social-links a {
 
 .navbar-nav li {
     position: relative;
+}
+
+.navbar-nav li.show-mobile {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav li.show-mobile {
+        display: block;
+    }    
 }
 
 .navbar-nav span {
@@ -1801,7 +1811,7 @@ select.mobile-device {
 }
 
 #contact {
-    background: url(images/bg.png) no-repeat center center #fff;
+    background: url('images/bg.png') no-repeat center center #fff;
 }
 
 
@@ -1832,7 +1842,7 @@ select.mobile-device {
     font-weight: 400;
     font-size: 20px;
     text-transform: capitalize;
-    line-height: !important;
+    line-height: 1.5 !important;
 }
 
 .footer {
@@ -2067,7 +2077,7 @@ select.mobile-device {
     color: #999 !important;
     margin: 0 !important;
     padding: 0 !important;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 .stat-wrap p {
@@ -2076,7 +2086,7 @@ select.mobile-device {
     margin: 0;
     font-weight: 300;
     padding: 4px 0 0;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 #preloader {

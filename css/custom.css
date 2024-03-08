@@ -246,7 +246,7 @@ header {
     z-index: 2;
 }	
 .text-contant h2 a, .text-contant h2 a:hover, .text-contant h2 a:focus {
-    color: #222;
+    color: #0b0b0b;
     opacity: 1;
 }
 .icon {
@@ -777,7 +777,7 @@ body.clinic_version .footer .widget-title h3 {
     width: 100%;
 }
 .logo img {
-    width: 250px;
+    width: 150px;
     margin-bottom: 30px;
 }
 .footer-area p {
@@ -1126,7 +1126,7 @@ nav.main-menu .navbar-toggle {
     letter-spacing: 0;
     font-weight: 500;
     margin-right: 5px;
-}	
+}
 
 /** mobile **/
 
@@ -1145,10 +1145,11 @@ header {
     margin-top: 0;
 }
 .navbar-brand img {
-    width: 70px;
+    width: 40px;
     position: relative;
     right: 10px;
 }
+
 .right-header {
     display: none;
 }
