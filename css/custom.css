@@ -1126,7 +1126,7 @@ nav.main-menu .navbar-toggle {
     letter-spacing: 0;
     font-weight: 500;
     margin-right: 5px;
-}	
+}
 
 /** mobile **/
 
@@ -1149,6 +1149,7 @@ header {
     position: relative;
     right: 10px;
 }
+
 .right-header {
     display: none;
 }
