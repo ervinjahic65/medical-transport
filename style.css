@@ -1126,6 +1126,7 @@ li.social-links a {
 
 .post-media {
     position: relative;
+    cursor: pointer;
 }
 
 .post-media img {

@@ -305,10 +305,10 @@ body.clinic_version .first-section h2 {
     float: left;
     width: 100%;    
     min-height: 350px;
-    margin-top: -350px;
+    /* margin-top: -350px; */
     padding: 50px;
     color: #fff;
-    position: relative;
+    position: relative;    
 }
 .info-icon {
     float: left;
@@ -346,8 +346,7 @@ body.clinic_version .first-section h2 {
 .service-time ul li {
     float: left;
     width: 100%;
-    font-size: 14px;
-    border-bottom: dashed 1px #fff;
+    font-size: 14px;    
     padding-bottom: 10px;
     padding-top: 10px;
 }
