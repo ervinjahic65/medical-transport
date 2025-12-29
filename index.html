@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SF1PC2N3H6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-SF1PC2N3H6');
+  </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <title>Sanitet asistencija</title>
-  <meta name="keywords" content="Sanitet asistencija, sanitetski prijevoz pacijenata, Sarajevo">
-  <meta name="description" content="Sanitet asistencija">
+  <meta name="keywords" content="Sanitet asistencija, sanitetski prijevoz, sanitetski prijevoz pacijenata, Sarajevo">
+  <meta name="description"
+    content="Sanitet asistencija pruža sanitetski prijevoz pacijenata, invalida, nepokretnih i teško pokretnih lica u zemlji i inostranstvu.">
   <meta name="author" content="Sanitetski prijevoz pacijenata">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:locale" content="bs_BA">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sanitet asistencija - Sanitetski prijevoz pacijenata | Sarajevo">
+  <meta property="og:description"
+    content="Sanitet asistencija pruža sanitetski prijevoz pacijenata, invalida, nepokretnih i teško pokretnih lica u zemlji i inostranstvu.">
+  <meta property="og:image" content="https://sanitetasistencijasarajevo.ba/bg-img.jpg">
+  <meta property="og:url" content="https://sanitetasistencijasarajevo.ba">
+  <meta property="og:site_name" content="Sanitet asistencija Sarajevo">
+  <meta property="article:publisher" content="https://www.facebook.com/profile.php?id=61557454831423">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="1600">
+  <!-- Site Icons -->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <style>
@@ -26,8 +51,8 @@
       --text-light: #666;
       --bg-light: #f8f9fa;
       --white: #ffffff;
-      --shadow: 0 10px 40px rgba(0,0,0,0.1);
-      --shadow-lg: 0 20px 60px rgba(0,0,0,0.15);
+      --shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
     }
 
     body {
@@ -67,8 +92,13 @@
     }
 
     @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
     }
 
     /* Header */
@@ -76,9 +106,9 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(255,255,255,0.95);
+      background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(10px);
-      box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
       z-index: 1000;
       transition: all 0.3s ease;
     }
@@ -150,7 +180,7 @@
     nav {
       background: var(--white);
       padding: 1rem 0;
-      border-top: 1px solid rgba(0,0,0,0.05);
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
     }
 
     .nav-container {
@@ -199,8 +229,8 @@
     .hero {
       margin-top: 130px;
       min-height: 600px;
-      background: linear-gradient(135deg, rgba(40,149,241,0.95), rgba(0,96,177,0.95)), 
-                  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%230071d1" width="1200" height="600"/><path fill="%232895f1" opacity="0.1" d="M0 300 Q300 100 600 300 T1200 300 V600 H0 Z"/></svg>');
+      background: linear-gradient(135deg, rgba(40, 149, 241, 0.95), rgba(0, 96, 177, 0.95)),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%230071d1" width="1200" height="600"/><path fill="%232895f1" opacity="0.1" d="M0 300 Q300 100 600 300 T1200 300 V600 H0 Z"/></svg>');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -227,8 +257,15 @@
     }
 
     @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-20px); }
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
     }
 
     .hero h1 {
@@ -264,12 +301,12 @@
     .btn-primary {
       background: white;
       color: var(--primary);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
 
     .btn-primary:hover {
       transform: translateY(-3px);
-      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
     }
 
     .btn-outline {
@@ -329,7 +366,7 @@
     .service-icon {
       width: 70px;
       height: 70px;
-      background: rgba(255,255,255,0.2);
+      background: rgba(255, 255, 255, 0.2);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -593,7 +630,7 @@
     .social-link {
       width: 45px;
       height: 45px;
-      background: rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.1);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -609,7 +646,7 @@
     .copyright {
       text-align: center;
       padding-top: 2rem;
-      border-top: 1px solid rgba(255,255,255,0.1);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
       opacity: 0.6;
     }
 
@@ -650,6 +687,7 @@
         opacity: 0;
         transform: translateY(30px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -662,6 +700,7 @@
 
     /* Responsive Design */
     @media (max-width: 1024px) {
+
       .services-grid,
       .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -733,6 +772,7 @@
     }
   </style>
 </head>
+
 <body>
   <div id="preloader">
     <div class="loader"></div>
@@ -745,7 +785,7 @@
           <img src="images/logo-snake.png" alt="Sanitet Asistencija">
         </a>
       </div>
-      
+
       <div class="contact-info">
         <a href="tel:+38761564564" class="contact-item">
           <div class="contact-icon">📞</div>
@@ -800,7 +840,7 @@
       <h3>Medicinska obezbjeđenja</h3>
       <p>Profesionalna zaštita sportskih i javnih događaja</p>
     </div>
-    
+
     <div class="service-card">
       <div class="service-icon">⏰</div>
       <h3>Dostupnost 24/7</h3>
@@ -810,7 +850,7 @@
         <li>📞 + 387 61 564 564</li>
       </ul>
     </div>
-    
+
     <div class="service-card">
       <div class="service-icon">🏥</div>
       <h3>Saradnja</h3>
@@ -828,15 +868,20 @@
       <div class="about-text">
         <h3>Šta mi radimo</h3>
         <h4>Profesionalni prijevoz pacijenata</h4>
-        <p>Sanitet asistencija predstavlja oblik predprimarne zdravstvene zaštite koju pruža specijalizovani tim posebno obučenih profesionalaca.</p>
-        
-        <p>Sanitet Asistencija servis predstavlja uvijek dostupnu uslugu sanitetskog prijevoza i po potrebi pratnje medicinske sestre/tehničara. Ukoliko je potrebna pratnja ljekara, moguć je dogovor za pratnju pacijenta.</p>
-        
-        <p>Naš tim provjerenih stručnjaka obučen je za vršenje paramedicinskih i medicinskih djelatnosti. Organizovani smo u tri tima profesionalaca koji operiraju na tlu čitave BiH i EU. Koristimo tri profesionalno opremljena sanitetska vozila.</p>
-        
-        <p><strong>Naše usluge uključuju:</strong> Prijevoz pacijenata specijalizovanim ambulantnim i avio prijevozom van granica BiH, sa postizanjem najviših standarda kvaliteta transporta.</p>
+        <p>Sanitet asistencija predstavlja oblik predprimarne zdravstvene zaštite koju pruža specijalizovani tim posebno
+          obučenih profesionalaca.</p>
+
+        <p>Sanitet Asistencija servis predstavlja uvijek dostupnu uslugu sanitetskog prijevoza i po potrebi pratnje
+          medicinske sestre/tehničara. Ukoliko je potrebna pratnja ljekara, moguć je dogovor za pratnju pacijenta.</p>
+
+        <p>Naš tim provjerenih stručnjaka obučen je za vršenje paramedicinskih i medicinskih djelatnosti. Organizovani
+          smo u tri tima profesionalaca koji operiraju na tlu čitave BiH i EU. Koristimo tri profesionalno opremljena
+          sanitetska vozila.</p>
+
+        <p><strong>Naše usluge uključuju:</strong> Prijevoz pacijenata specijalizovanim ambulantnim i avio prijevozom
+          van granica BiH, sa postizanjem najviših standarda kvaliteta transporta.</p>
       </div>
-      
+
       <div class="about-image">
         <img src="images/about-03.png" alt="Medical Transport">
       </div>
@@ -881,7 +926,8 @@
       <div class="testimonial-card">
         <div class="quote-icon">"</div>
         <h3>Vrlo profesionalni i ljubazni!</h3>
-        <p>Momci su profesionalni, sve pohvale! Brza reakcija i odličan pristup pacijentima. Preporučujem svima koji trebaju ovakvu vrstu usluge.</p>
+        <p>Momci su profesionalni, sve pohvale! Brza reakcija i odličan pristup pacijentima. Preporučujem svima koji
+          trebaju ovakvu vrstu usluge.</p>
         <div class="testimonial-author">
           <div class="author-avatar">AH</div>
           <div class="author-info">
@@ -893,7 +939,8 @@
       <div class="testimonial-card">
         <div class="quote-icon">"</div>
         <h3>Odlična usluga!</h3>
-        <p>Sve preporuke. Profesionalan pristup, brza dostava i pažljivo postupanje sa pacijentima. Osjećali smo se sigurno tokom cijelog prijevoza.</p>
+        <p>Sve preporuke. Profesionalan pristup, brza dostava i pažljivo postupanje sa pacijentima. Osjećali smo se
+          sigurno tokom cijelog prijevoza.</p>
         <div class="testimonial-author">
           <div class="author-avatar">AP</div>
           <div class="author-info">
@@ -911,7 +958,9 @@
     </div>
 
     <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95639.21167871749!2d18.4065289576186!3d43.754098973110295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758ca06df1b56b3%3A0xdaca2bc7d8a8e547!2sFerhat%20Pa%C5%A1e%20Sokolovi%C4%87a!5e0!3m2!1sen!2sba!4v1710155017198!5m2!1sen!2sba" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95639.21167871749!2d18.4065289576186!3d43.754098973110295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758ca06df1b56b3%3A0xdaca2bc7d8a8e547!2sFerhat%20Pa%C5%A1e%20Sokolovi%C4%87a!5e0!3m2!1sen!2sba!4v1710155017198!5m2!1sen!2sba"
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
 
@@ -934,16 +983,21 @@
 
       <div class="footer-section">
         <h3>Pratite nas</h3>
-        <p>Sanitet Asistencija vrši niz djelatnosti iz važeće uredbe o klasifikaciji koje su sadržane u rješenju suda. Kontaktirajte nas!</p>
+        <p>Sanitet Asistencija vrši niz djelatnosti iz važeće uredbe o klasifikaciji koje su sadržane u rješenju suda.
+          Kontaktirajte nas!</p>
         <div class="social-links">
-          <a href="https://www.facebook.com/sanitet.asistencija" class="social-link" aria-label="Facebook" target="_blank">
+          <a href="https://www.facebook.com/sanitet.asistencija" class="social-link" aria-label="Facebook"
+            target="_blank">
             <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M22 12.07C22 6.5 17.52 2 12 2S2 6.5 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.02H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.8 8.44-4.94 8.44-9.93z"/>
+              <path
+                d="M22 12.07C22 6.5 17.52 2 12 2S2 6.5 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.02H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.8 8.44-4.94 8.44-9.93z" />
             </svg>
           </a>
-          <a href="https://www.instagram.com/sanitet_asistencija" class="social-link" aria-label="Instagram" target="_blank">
+          <a href="https://www.instagram.com/sanitet_asistencija" class="social-link" aria-label="Instagram"
+            target="_blank">
             <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 12 17a4.5 4.5 0 0 0 0-9zm0 7.2A2.7 2.7 0 1 1 12 9.3a2.7 2.7 0 0 1 0 5.4zM17.25 6.5a1.05 1.05 0 1 0 0 2.1 1.05 1.05 0 0 0 0-2.1z"/>
+              <path
+                d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 12 17a4.5 4.5 0 0 0 0-9zm0 7.2A2.7 2.7 0 1 1 12 9.3a2.7 2.7 0 0 1 0 5.4zM17.25 6.5a1.05 1.05 0 1 0 0 2.1 1.05 1.05 0 0 0 0-2.1z" />
             </svg>
           </a>
         </div>
@@ -1003,7 +1057,7 @@
         if (target) {
           const headerHeight = document.getElementById('header').offsetHeight;
           const targetPosition = target.offsetTop - headerHeight;
-          
+
           window.scrollTo({
             top: targetPosition,
             behavior: 'smooth'
@@ -1055,6 +1109,8 @@
     document.querySelectorAll('.service-card, .gallery-item, .testimonial-card').forEach(el => {
       observer.observe(el);
     });
+
   </script>
 </body>
+
 </html>
