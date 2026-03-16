@@ -874,3 +874,147 @@ footer {
     padding: 0.5rem;
   }
 }
+
+/* ===== Dark Mode Toggle Button ===== */
+.dark-mode-btn {
+  background: none;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  padding: 0.35rem 0.75rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--text-dark);
+  line-height: 1;
+  position: relative;
+}
+
+.dark-mode-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.dark-mode-btn::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #1a1a1a;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.dark-mode-btn:hover::after,
+.dark-mode-btn:hover::before {
+  opacity: 1;
+}
+
+.dark-mode-btn:hover {
+  border-color: var(--primary);
+  background: rgba(40, 149, 241, 0.08);
+}
+
+/* ===== Dark Mode ===== */
+body.dark-mode {
+  --text-dark: #e8eaed;
+  --text-light: #aab0b8;
+  --bg-light: #1a1d23;
+  --white: #242830;
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
+  background: #131519;
+  color: var(--text-dark);
+}
+
+body.dark-mode header {
+  background: rgba(20, 22, 28, 0.97);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .header-container {
+  background-color: transparent;
+}
+
+body.dark-mode nav {
+  background: #1a1d23;
+  border-top-color: rgba(255, 255, 255, 0.06);
+}
+
+body.dark-mode .nav-menu a {
+  color: var(--text-dark);
+}
+
+body.dark-mode .contact-item {
+  color: var(--text-dark);
+}
+
+body.dark-mode .mobile-menu-btn {
+  color: var(--text-dark);
+}
+
+body.dark-mode .dark-mode-btn {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--text-dark);
+}
+
+body.dark-mode #preloader {
+  background: #131519;
+}
+
+body.dark-mode .section h2,
+body.dark-mode .about-text h4 {
+  color: var(--text-dark);
+}
+
+body.dark-mode .service-card {
+  background: linear-gradient(135deg, #1e3a5c, #1a4a7a);
+}
+
+body.dark-mode .testimonials {
+  background: #1a1d23;
+}
+
+body.dark-mode .testimonial-card {
+  background: #242830;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .testimonial-card h3 {
+  color: var(--text-dark);
+}
+
+body.dark-mode .author-info h4 {
+  color: var(--text-dark);
+}
+
+body.dark-mode .about-image {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode footer {
+  background: linear-gradient(135deg, #0d0f13, #000);
+}
+
+body.dark-mode .back-to-top {
+  box-shadow: 0 5px 20px rgba(40, 149, 241, 0.4);
+}
+
+body.dark-mode .lightbox {
+  background: rgba(0, 0, 0, 0.97);
+}
+

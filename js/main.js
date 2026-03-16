@@ -5,6 +5,24 @@ window.addEventListener('load', () => {
   }, 800);
 });
 
+// Dark mode
+const darkModeBtn = document.getElementById('darkModeBtn');
+const darkModeIcon = darkModeBtn.querySelector('.dark-mode-icon');
+
+function applyDarkMode(isDark) {
+  document.body.classList.toggle('dark-mode', isDark);
+  darkModeIcon.textContent = isDark ? '☀️' : '🌙';
+  darkModeBtn.dataset.tooltip = isDark ? 'Svijetli način rada' : 'Tamni način rada';
+}
+
+applyDarkMode(localStorage.getItem('darkMode') === 'true');
+
+darkModeBtn.addEventListener('click', () => {
+  const isDark = !document.body.classList.contains('dark-mode');
+  applyDarkMode(isDark);
+  localStorage.setItem('darkMode', isDark);
+});
+
 // Dynamic copyright year
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
