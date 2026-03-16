@@ -441,6 +441,10 @@ nav {
   display: none;
 }
 
+.testimonial-hidden {
+  display: none;
+}
+
 .gallery-load-more {
   text-align: center;
   margin-top: 3rem;
@@ -476,8 +480,8 @@ nav {
 
 .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   margin-top: 3rem;
 }
 
@@ -532,6 +536,18 @@ nav {
 .author-info h4 {
   color: var(--text-dark);
   margin-bottom: 0.25rem;
+}
+
+.author-info span {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.star-rating {
+  color: #f5a623;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 2px;
 }
 
 /* Contact Section */
@@ -681,6 +697,10 @@ footer {
 
   .services-grid,
   .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 

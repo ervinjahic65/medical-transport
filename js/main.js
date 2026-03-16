@@ -108,6 +108,43 @@ if (loadMoreBtn) {
   });
 }
 
+// Load More Testimonials
+const loadMoreTestimonialsBtn = document.getElementById('loadMoreTestimonialsBtn');
+if (loadMoreTestimonialsBtn) {
+  loadMoreTestimonialsBtn.addEventListener('click', () => {
+    document.querySelectorAll('.testimonial-hidden').forEach(item => {
+      item.classList.remove('testimonial-hidden');
+      item.style.animation = 'fadeInUp 0.5s ease';
+    });
+    loadMoreTestimonialsBtn.disabled = true;
+  });
+}
+
+// Dynamic review dates in Bosnian
+function bosnianRelativeTime(dateStr) {
+  const now = new Date();
+  const past = new Date(dateStr);
+  const diffDays = Math.floor((now - past) / 86400000);
+  if (diffDays === 0) return 'danas';
+  if (diffDays === 1) return 'jučer';
+  if (diffDays < 7) return `prije ${diffDays} dana`;
+  const diffWeeks = Math.floor(diffDays / 7);
+  if (diffDays < 30) return diffWeeks === 1 ? 'prije jedne sedmice' : `prije ${diffWeeks} sedmice`;
+  const diffMonths = Math.round(diffDays / 30.44);
+  if (diffMonths < 12) {
+    if (diffMonths === 1) return 'prije jednog mjeseca';
+    if (diffMonths < 5) return `prije ${diffMonths} mjeseca`;
+    return `prije ${diffMonths} mjeseci`;
+  }
+  const diffYears = Math.round(diffDays / 365.25);
+  if (diffYears === 1) return 'prije jedne godine';
+  if (diffYears < 5) return `prije ${diffYears} godine`;
+  return `prije ${diffYears} godina`;
+}
+document.querySelectorAll('.review-date[data-date]').forEach(el => {
+  el.textContent = bosnianRelativeTime(el.dataset.date);
+});
+
 // Lightbox Gallery
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
